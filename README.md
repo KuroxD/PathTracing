@@ -10,7 +10,7 @@
 - Src:源代码文件
 	- Basic:光线求交相关，包括线索BVH构建，AABB、三角形求交
 	- opengl:opengl相关接口封装，包括模型读取，VAO，纹理，shader，渲染pass封装
-	- Shader：glsl shader源代码，主要是rayTracing.fs处理path tracing核心逻辑
+	- Shader:glsl shader源代码，主要是rayTracing.fs处理path tracing核心逻辑
 	- main.cpp:程序入口
 	- test.cpp:CPU端path Tracing测试debug用
 
