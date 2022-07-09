@@ -15,4 +15,4 @@
 	- test.cpp:CPU端path Tracing测试debug用
 
 # Preview
-![image](Assets/preview/cornell%20box.png)
+![image](Assets/preview/cornell%20box%20ACES.png)
