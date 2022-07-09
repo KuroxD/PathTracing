@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Basic\BVH_Node.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Basic\AABB.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Basic\Triangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\opengl\Model.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\opengl\Scence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\opengl\Shader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\opengl\Define.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\opengl\RenderPass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Dependencies\Lib\glfw3.lib" />
+    <Library Include="Dependencies\Lib\glew32s.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dependencies\Include\GLM\core\_detail.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\_fixes.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\_swizzle.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\_swizzle_func.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\_vectorize.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\func_common.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\func_exponential.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\func_geometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\func_integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\func_matrix.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\func_noise.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\func_packing.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\func_trigonometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\func_vector_relational.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\hint.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\intrinsic_common.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\intrinsic_exponential.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\intrinsic_geometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\intrinsic_matrix.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\intrinsic_trigonometric.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\intrinsic_vector_relational.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\setup.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_float.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_gentype.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_half.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_int.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_mat.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_mat2x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_mat2x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_mat2x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_mat3x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_mat3x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_mat3x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_mat4x2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_mat4x3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_mat4x4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_size.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_vec.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_vec1.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_vec2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_vec3.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\core\type_vec4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtc\half_float.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtc\matrix_access.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtc\matrix_integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtc\matrix_inverse.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtc\matrix_transform.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtc\noise.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtc\quaternion.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtc\random.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtc\swizzle.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtc\type_precision.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtc\type_ptr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\associated_min_max.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\bit.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\closest_point.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\color_cast.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\color_space.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\color_space_YCoCg.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\compatibility.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\component_wise.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\constants.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\epsilon.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\euler_angles.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\extend.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\extented_min_max.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\fast_exponential.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\fast_square_root.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\fast_trigonometry.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\gradient_paint.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\handed_coordinate_space.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\inertia.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\int_10_10_10_2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\integer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\intersect.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\log_base.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\matrix_cross_product.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\matrix_interpolation.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\matrix_major_storage.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\matrix_operation.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\matrix_query.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\mixed_product.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\multiple.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\noise.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\norm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\normal.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\normalize_dot.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\number_precision.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\ocl_type.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\optimum_pow.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\orthonormalize.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\perpendicular.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\polar_coordinates.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\projection.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\quaternion.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\random.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\raw_data.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\reciprocal.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\rotate_vector.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\simd_mat4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\simd_vec4.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\spline.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\std_based_type.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\string_cast.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\transform.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\transform2.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\ulp.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\unsigned_int.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\vec1.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\vector_access.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\vector_angle.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\vector_query.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\verbose_operator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\gtx\wrap.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\virtrev\xstream.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\ext.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GLM\glm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Basic\BVH_Node.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Basic\Ray.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Basic\AABB.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Basic\Hitable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Basic\Triangle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\opengl\Model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\opengl\Scence.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GL\eglew.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GL\glew.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GL\glxew.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Include\GL\wglew.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\opengl\Shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Shader\rayTracing.fs">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\opengl\Define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\opengl\RenderPass.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\opengl\Texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\opengl\VAO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dependencies\Include\GLM\core\func_common.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\func_exponential.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\func_geometric.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\func_integer.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\func_matrix.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\func_noise.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\func_packing.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\func_trigonometric.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\func_vector_relational.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\intrinsic_common.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\intrinsic_exponential.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\intrinsic_geometric.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\intrinsic_matrix.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\intrinsic_trigonometric.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\intrinsic_vector_relational.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_gentype.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_half.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_mat.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_mat2x2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_mat2x3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_mat2x4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_mat3x2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_mat3x3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_mat3x4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_mat4x2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_mat4x3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_mat4x4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_vec.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_vec1.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_vec2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_vec3.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\core\type_vec4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtc\half_float.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtc\matrix_access.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtc\matrix_inverse.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtc\matrix_transform.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtc\noise.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtc\quaternion.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtc\random.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtc\swizzle.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtc\type_precision.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtc\type_ptr.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\associated_min_max.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\bit.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\closest_point.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\color_cast.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\color_space.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\color_space_YCoCg.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\compatibility.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\component_wise.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\constants.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\epsilon.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\euler_angles.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\extend.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\extented_min_max.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\fast_exponential.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\fast_square_root.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\fast_trigonometry.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\gradient_paint.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\handed_coordinate_space.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\inertia.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\int_10_10_10_2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\integer.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\intersect.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\log_base.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\matrix_cross_product.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\matrix_interpolation.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\matrix_major_storage.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\matrix_operation.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\matrix_query.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\mixed_product.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\multiple.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\noise.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\norm.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\normal.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\normalize_dot.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\number_precision.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\ocl_type.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\optimum_pow.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\orthonormalize.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\perpendicular.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\polar_coordinates.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\projection.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\quaternion.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\random.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\raw_data.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\reciprocal.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\rotate_vector.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\simd_mat4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\simd_vec4.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\spline.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\std_based_type.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\string_cast.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\transform.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\transform2.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\ulp.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\unsigned_int.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\vec1.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\vector_access.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\vector_angle.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\vector_query.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\verbose_operator.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Dependencies\Include\GLM\gtx\wrap.inl">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="Src\Shader\common.vs" />
+    <None Include="Src\Shader\middle.fs" />
+    <None Include="Src\Shader\tex2Screen.fs" />
+    <None Include="RayTracing.exe" />
+  </ItemGroup>
+</Project>
